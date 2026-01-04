@@ -1,11 +1,11 @@
 body {
     margin: 0;
-    font-family: Courier New, sans-serif;
+    font-family: Courier New;
     background: #FFFACD;
     color: #654321;
 }
 h1, h2 {
-    font-family: Mine, serif;
+    font-family: Mine;
     color: #FFD700;
 }
 a {
