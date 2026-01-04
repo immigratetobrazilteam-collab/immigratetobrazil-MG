@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Minas Gerais Immigration Site",
+  "url": "https://immigratetobrazil.com/mg/",
+  "description": "Minas Gerais, Brazil's fourth largest state by area and second by population, is renowned for its colonial architecture in cities like Ouro Preto, mineral-rich history, diverse biomes including Cerrado and Atlantic Forest, and traditional cuisine featuring p\u00e3o de queijo and cacha\u00e7a.",
+  "keywords": [
+    "Minas Gerais",
+    "Belo Horizonte",
+    "Ouro Preto",
+    "colonial architecture",
+    "p\u00e3o de queijo",
+    "cacha\u00e7a",
+    "football"
+  ],
+  "inLanguage": "en"
+}
