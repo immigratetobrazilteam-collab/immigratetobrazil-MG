@@ -1,15 +1,52 @@
-<nav class="mobile-nav" aria-label="Mobile navigation">
-    <button aria-expanded="false" aria-controls="mobile-menu">Menu</button>
-    <ul id="mobile-menu" hidden>
-        <li><a href="/">Home</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/services/artistic-visa">Artistic Visa</a></li>
-        <li><a href="/mg">Explore Minas Gerais</a></li>
+<nav class="mobile-nav md:hidden" aria-label="Mobile navigation">
+    <button aria-expanded="false" aria-controls="mobile-menu" class="w-full px-4 py-2 bg-[#FFD700] text-white rounded flex justify-between items-center">Menu <i class="fas fa-chevron-down"></i></button>
+    <ul id="mobile-menu" class="hidden flex flex-col bg-white shadow-md rounded-md mt-1 overflow-auto max-h-[80vh]">
+        <li><a href="/" class="block px-4 py-2 hover:bg-[#8B4513]/10">Home</a></li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#8B4513]/10 flex justify-between items-center" aria-expanded="false" aria-controls="services-sub">Services <i class="fas fa-chevron-down"></i></button>
+            <ul id="services-sub" class="hidden pl-4">
+                <li class="font-bold py-1">Travel Services</li>
+                
+                <li class="font-bold py-1 mt-2">Brazilian Visas</li>
+                <li><a href="/visas/artistic-visa" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Artistic Visa">Artistic Visa</a></li>
+                <li class="font-bold py-1 mt-2">Residency Permits</li>
+                
+                <li class="font-bold py-1 mt-2">Citizenship & Naturalisation</li>
+                
+                <li class="font-bold py-1 mt-2">Other Services</li>
+                
+            </ul>
+        </li>
+        <li>
+            <button class="w-full text-left px-4 py-2 hover:bg-[#8B4513]/10 flex justify-between items-center" aria-expanded="false" aria-controls="explore-sub">Explore Minas Gerais <i class="fas fa-chevron-down"></i></button>
+            <ul id="explore-sub" class="hidden pl-4">
+                <li><a href="/explore/ouro-preto-(colonial-architecture)" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Ouro Preto (colonial architecture)">Ouro Preto (colonial architecture)</a></li><li><a href="/explore/diamantina" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Diamantina">Diamantina</a></li><li><a href="/explore/são-joão-del-rei" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="São João del-Rei">São João del-Rei</a></li><li><a href="/explore/mariana" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Mariana">Mariana</a></li><li><a href="/explore/tiradentes" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Tiradentes">Tiradentes</a></li><li><a href="/explore/congonhas" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Congonhas">Congonhas</a></li><li><a href="/explore/sabará" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Sabará">Sabará</a></li><li><a href="/explore/serro" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Serro">Serro</a></li><li><a href="/explore/inhotim-(contemporary-art-center)" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Inhotim (contemporary art center)">Inhotim (contemporary art center)</a></li><li><a href="/explore/museum-of-inconfidência-(ouro-preto)" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Museum of Inconfidência (Ouro Preto)">Museum of Inconfidência (Ouro Preto)</a></li><li><a href="/explore/rugged-terrain-with-high-peaks-(e.g.,-pico-da-bandeira)" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Rugged terrain with high peaks (e.g., Pico da Bandeira)">Rugged terrain with high peaks (e.g., Pico da Bandeira)</a></li><li><a href="/explore/sources-of-rivers-(são-francisco,-doce,-jequitinhonha)" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="sources of rivers (São Francisco, Doce, Jequitinhonha)">sources of rivers (São Francisco, Doce, Jequitinhonha)</a></li><li><a href="/explore/cerrado-and-atlantic-forest-biomes" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Cerrado and Atlantic Forest biomes">Cerrado and Atlantic Forest biomes</a></li><li><a href="/explore/caves-and-waterfalls-in-serra-do-cipó" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="caves and waterfalls in Serra do Cipó">caves and waterfalls in Serra do Cipó</a></li><li><a href="/explore/hydro-mineral-spas" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="hydro-mineral spas">hydro-mineral spas</a></li><li><a href="/explore/caparaó-national-park" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Caparaó National Park">Caparaó National Park</a></li><li><a href="/explore/serra-da-canastra-national-park" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Serra da Canastra National Park">Serra da Canastra National Park</a></li><li><a href="/explore/serra-do-cipó-national-park" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Serra do Cipó National Park">Serra do Cipó National Park</a></li><li><a href="/explore/rio-doce-state-park" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Rio Doce State Park">Rio Doce State Park</a></li><li><a href="/explore/itatiaia-national-park" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Itatiaia National Park">Itatiaia National Park</a></li><li><a href="/explore/pão-de-queijo" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Pão de queijo">Pão de queijo</a></li><li><a href="/explore/doce-de-leite" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="doce de leite">doce de leite</a></li><li><a href="/explore/minas-cheese" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="Minas cheese">Minas cheese</a></li><li><a href="/explore/cachaça" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="cachaça">cachaça</a></li><li><a href="/explore/tropeiro-beans-with-torresmo" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="tropeiro beans with torresmo">tropeiro beans with torresmo</a></li><li><a href="/explore/tutu-de-feijão" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="tutu de feijão">tutu de feijão</a></li><li><a href="/explore/chicken-with-okra-stew" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="chicken with okra stew">chicken with okra stew</a></li><li><a href="/explore/galinhada" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="galinhada">galinhada</a></li><li><a href="/explore/goiabada" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="goiabada">goiabada</a></li><li><a href="/explore/paçoca" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="paçoca">paçoca</a></li><li><a href="/explore/pamonha" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="pamonha">pamonha</a></li><li><a href="/explore/arroz-com-leite" class="block py-2 pl-4 hover:bg-[#8B4513]/10" title="arroz com leite">arroz com leite</a></li>
+            </ul>
+        </li>
+        <li><a href="/contact" class="block px-4 py-2 hover:bg-[#8B4513]/10">Contact</a></li>
+        <li><a href="/faq" class="block px-4 py-2 hover:bg-[#8B4513]/10">FAQ</a></li>
+        <li><a href="/blog" class="block px-4 py-2 hover:bg-[#8B4513]/10">Blog</a></li>
+        <li><a href="/about" class="block px-4 py-2 hover:bg-[#8B4513]/10">About</a></li>
     </ul>
     <script>
-    document.querySelector('.mobile-nav button').addEventListener('click', function() {
-        this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');
-        document.getElementById('mobile-menu').hidden = !document.getElementById('mobile-menu').hidden;
-    });
+        const menuBtn = document.querySelector('.mobile-nav button');
+        const menu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            const expanded = menuBtn.getAttribute('aria-expanded') === 'true';
+            menuBtn.setAttribute('aria-expanded', !expanded);
+            menu.classList.toggle('hidden');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-down');
+            menuBtn.querySelector('i').classList.toggle('fa-chevron-up');
+        });
+        document.querySelectorAll('.mobile-nav li button').forEach(subBtn => {
+            subBtn.addEventListener('click', () => {
+                const expanded = subBtn.getAttribute('aria-expanded') === 'true';
+                subBtn.setAttribute('aria-expanded', !expanded);
+                const subMenu = document.getElementById(subBtn.getAttribute('aria-controls'));
+                subMenu.classList.toggle('hidden');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-down');
+                subBtn.querySelector('i').classList.toggle('fa-chevron-up');
+            });
+        });
     </script>
 </nav>
